@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADPL Task Space</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-icon">✿</div>
+      <div>
+        <h2>ADPL</h2>
+        <p>Task Space</p>
+      </div>
+    </div>
+
+    <nav class="navigation">
+      <a href="#beranda" class="nav-link active">
+        <span>⌂</span> Beranda
+      </a>
+
+      <a href="#matakuliah" class="nav-link">
+        <span>▤</span> Mata Kuliah
+      </a>
+
+      <a href="#tugas" class="nav-link">
+        <span>▧</span> Daftar Tugas
+      </a>
+
+      <a href="#upload" class="nav-link">
+        <span>＋</span> Upload Tugas
+      </a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <div class="sidebar-note">
+        <span>♡</span>
+        <p>Keep learning, keep growing!</p>
+      </div>
+      <small>© 2026 ADPL Task Space</small>
+    </div>
+  </aside>
+
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- TOPBAR -->
+    <header class="topbar">
+      <div>
+        <p class="welcome-text">Selamat datang di</p>
+        <h1>ADPL Task Space <span>♡</span></h1>
+      </div>
+
+      <div class="topbar-profile">
+        <div class="profile-icon">N</div>
+        <div>
+          <strong>Nadira Ahnaf Rayhana</strong>
+          <small>Mahasiswa TI24A</small>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- BERANDA -->
+    <section id="beranda" class="hero-section">
+      <div class="hero-text">
+        <span class="hero-label">✿ MY ACADEMIC SPACE</span>
+
+        <h2>Organize Your Tasks,<br>
+          <span>Make Your Dreams Come True.</span>
+        </h2>
+
+        <p>
+          Tempat penyimpanan dan pengumpulan tugas kuliah
+          yang praktis, rapi, dan mudah diakses.
+        </p>
+
+        <a href="#tugas" class="primary-button">
+          Lihat Daftar Tugas →
+        </a>
+      </div>
+
+      <div class="hero-decoration">
+        <div class="decoration-circle">✿</div>
+        <span class="deco-star star-one">✦</span>
+        <span class="deco-star star-two">♡</span>
+        <span class="deco-star star-three">✧</span>
+      </div>
+    </section>
+
+
+    <!-- STATISTIK -->
+    <section class="stats-grid">
+
+      <div class="stat-card">
+        <div class="stat-icon pink">▤</div>
+        <div>
+          <p>Total Mata Kuliah</p>
+          <h2 id="totalMatkul">8</h2>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon purple">▧</div>
+        <div>
+          <p>Total Tugas</p>
+          <h2 id="totalTugas">0</h2>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon peach">♡</div>
+        <div>
+          <p>File Tersimpan</p>
+          <h2 id="totalFile">0</h2>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- MATA KULIAH -->
+    <section id="matakuliah" class="content-section">
+
+      <div class="section-heading">
+        <div>
+          <span class="section-label">MY COURSES</span>
+          <h2>Mata Kuliah Semester 5</h2>
+          <p>Daftar mata kuliah yang sedang dipelajari.</p>
+        </div>
+      </div>
+
+      <div class="course-grid">
+
+        <div class="course-card">
+          <div class="course-icon">📚</div>
+          <h3>Analisis dan Desain PL</h3>
+          <p>ADPL</p>
+        </div>
+
+        <div class="course-card">
+          <div class="course-icon">💻</div>
+          <h3>Pemrograman Berbasis Platform</h3>
+          <p>PBP</p>
+        </div>
+
+        <div class="course-card">
+          <div class="course-icon">🌷</div>
+          <h3>AIK 4</h3>
+          <p>Al-Islam dan Kemuhammadiyahan</p>
+        </div>
+
+        <div class="course-card">
+          <div class="course-icon">🔐</div>
+          <h3>Cyber Security Analysis & Method</h3>
+          <p>Cyber Security</p>
+        </div>
+
+        <div class="course-card">
+          <div class="course-icon">🎨</div>
+          <h3>Interaksi Manusia dan Komputer</h3>
+          <p>IMK</p>
+        </div>
+
+        <div class="course-card">
+          <div class="course-icon">📋</div>
+          <h3>Manajemen Proyek</h3>
+          <p>Project Management</p>
+        </div>
+
+        <div class="course-card">
+          <div class="course-icon">🛡️</div>
+          <h3>Network Penetration Testing</h3>
+          <p>NPT</p>
+        </div>
+
+        <div class="course-card">
+          <div class="course-icon">📝</div>
+          <h3>Metodologi Penelitian</h3>
+          <p>Metopen</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- DAFTAR TUGAS -->
+    <section id="tugas" class="content-section">
+
+      <div class="section-heading task-heading">
+        <div>
+          <span class="section-label">MY ASSIGNMENTS</span>
+          <h2>Daftar Tugas</h2>
+          <p>Dokumen tugas yang telah diunggah.</p>
+        </div>
+
+        <a href="#upload" class="secondary-button">
+          + Tambah Tugas
+        </a>
+      </div>
+
+      <div class="search-filter">
+        <div class="search-box">
+          <span>⌕</span>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Cari nama tugas atau mata kuliah..."
+          >
+        </div>
+
+        <select id="filterMatkul">
+          <option value="">Semua Mata Kuliah</option>
+          <option value="Analisis dan Desain PL">Analisis dan Desain PL</option>
+          <option value="Pemrograman Berbasis Platform">Pemrograman Berbasis Platform</option>
+          <option value="AIK 4">AIK 4</option>
+          <option value="Cyber Security Analysis & Method">Cyber Security</option>
+          <option value="Interaksi Manusia dan Komputer">IMK</option>
+          <option value="Manajemen Proyek">Manajemen Proyek</option>
+          <option value="Network Penetration Testing">NPT</option>
+          <option value="Metodologi Penelitian">Metopen</option>
+        </select>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Nama Tugas</th>
+              <th>Mata Kuliah</th>
+              <th>Tanggal Upload</th>
+              <th>Dokumen</th>
+            </tr>
+          </thead>
+
+          <tbody id="taskList">
+            <tr>
+              <td colspan="4" class="empty-state">
+                <div>📂</div>
+                <strong>Belum ada tugas</strong>
+                <p>Dokumen yang diunggah akan muncul di sini.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+
+
+    <!-- UPLOAD TUGAS -->
+    <section id="upload" class="content-section">
+
+      <div class="section-heading">
+        <div>
+          <span class="section-label">UPLOAD DOCUMENT</span>
+          <h2>Upload Tugas Baru</h2>
+          <p>Tambahkan dokumen tugas kuliah ke dalam arsip.</p>
+        </div>
+      </div>
+
+      <div class="upload-card">
+
+        <form id="uploadForm">
+
+          <div class="form-group">
+            <label for="namaTugas">Nama Tugas</label>
+            <input
+              type="text"
+              id="namaTugas"
+              placeholder="Contoh: Proposal Project Sistem"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="mataKuliah">Mata Kuliah</label>
+            <select id="mataKuliah" required>
+              <option value="">Pilih Mata Kuliah</option>
+              <option>Analisis dan Desain PL</option>
+              <option>Pemrograman Berbasis Platform</option>
+              <option>AIK 4</option>
+              <option>Cyber Security Analysis & Method</option>
+              <option>Interaksi Manusia dan Komputer</option>
+              <option>Manajemen Proyek</option>
+              <option>Network Penetration Testing</option>
+              <option>Metodologi Penelitian</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="deskripsi">Deskripsi (Opsional)</label>
+            <textarea
+              id="deskripsi"
+              placeholder="Tambahkan keterangan tugas..."
+              rows="3"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="fileTugas">Pilih Dokumen</label>
+
+            <label for="fileTugas" class="file-upload-area">
+              <span class="upload-icon">☁</span>
+              <strong>Klik untuk memilih file</strong>
+              <small>Format PDF, DOC, DOCX, PPT, PPTX</small>
+              <span id="fileName">Belum ada file dipilih</span>
+            </label>
+
+            <input
+              type="file"
+              id="fileTugas"
+              accept=".pdf,.doc,.docx,.ppt,.pptx"
+              required
+              hidden
+            >
+          </div>
+
+          <button type="submit" class="primary-button upload-button">
+            ♡ Upload Tugas
+          </button>
+
+          <p id="uploadMessage" class="upload-message"></p>
+
+        </form>
+
+      </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>Made with ♡ by Nadira Ahnaf Rayhana</p>
+      <small>ADPL Task Space · Teknik Informatika · TI24A</small>
+    </footer>
+
+  </main>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
